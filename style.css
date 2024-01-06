@@ -125,7 +125,6 @@ span {
     top: 4rem;
     width: 30vw;
     clip-path: circle(40.7% at 50% 50%);
-    cursor: pointer;
 }
 
 .home-content p {
@@ -446,7 +445,6 @@ span {
     }
     .home-content h1 {
         font-size: 2.5rem;
-        margin-top: 1em;
         font-weight: 700;
         line-height: 1;
         /* Adjusted font size for small screens */
