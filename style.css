@@ -411,8 +411,8 @@ span {
     #menu-icon {
         display: block;
     }
-    .home-img img {
-        margin-top: 5rem;
+    section {
+        min-height: 100vh;
     }
     .about {
         max-height: 200px;
@@ -478,7 +478,7 @@ span {
         /* Adjusted font size for small screens */
     }
     section {
-        min-height: 80vh;
+        min-height: 100vh;
     }
     .about {
         margin-top: .5rem;
