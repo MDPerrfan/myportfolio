@@ -101,3 +101,8 @@ function pressRandomKey() {
     };
 }
 pressRandomKey();
+
+function showAlert() {
+    alert("This website is under development!");
+}
+showAlert();
