@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Profile</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">MDP<span>.DEV</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <scention class="home" id="home">
+        <div class="home-img">
+            <img src="profile.jpg.jpeg" alt="Errfan">
+        </div>
+
+        <div class="home-content">
+            <h1>Welcome!</h1>
+            <h3>
+                I'm a
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Web Developer", "Web Designer", "C Developer","Teacher" ]'>
+                    <span class="wrap"></span>
+                </a>
+            </h3>
+            <p></p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/mdparves.erfan.3" target="_blank"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://github.com/MDPerrfan" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com/errfan51?igsh=MXVhZWlwZjQ4NXVteA==" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <a href="mailto:mdperrfan@gmail.com" target="_blank" class="btn">Hire me</a>
+    </scention>
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="keyboard">
+                <span class="key">A</span>
+                <span class="key">B</span>
+                <span class="key">O</span>
+                <span class="key">U</span>
+                <span class="key">T</span>
+                <span class="key"></span>
+                <span class="key">M</span>
+                <span class="key">E</span>
+            </div>
+            <h3>
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Web Developer", "Web Designer", "C Developer","Teacher" ]'>
+                    <span class="wrap"></span>
+                </a>
+            </h3>
+            <p id="about-text">
+                As a dedicated computer science student and passionate frontend developer, my journey involves unraveling the intricate tapestry of technology, delving into the inner workings of systems, and exploring the fascinating realm of how things operate. Proficient
+                in both web development, particularly excelling in frontend technologies, and the C programming language, I derive immense joy from crafting seamless user experiences and immersing myself in the intricate world of code. Beyond my academic
+                pursuits, I seamlessly transition into the role of a teacher, sharing my knowledge and insights with others. This dual identity not only serves as a continuous learning experience but also fosters an environment of collaboration and mutual
+                growth. Whether it's deciphering the complexities of algorithms or elegantly crafting web solutions, my curiosity is the driving force propelling me to comprehend the nuanced details of the digital landscape. In the vast landscape of technology,
+                I find fulfillment in the synthesis of theoretical knowledge and hands-on application. If there are specific details you'd like to delve into or discuss further, please feel free to let me know. I am always eager to engage in meaningful
+                conversations about the ever-evolving world of technology and code.
+            </p>
+            <div class="btn" onclick="toggleReadMore()">Read more</div>
+
+            <script>
+                function toggleReadMore() {
+                    var content = document.getElementById('about-text');
+                    content.style.maxHeight = content.style.maxHeight === '3.5em' ? 'none' : '3.5em';
+                }
+            </script>
+        </div>
+        <div class="ring2">
+            <i style="--clr:#fa5e0f;"></i>
+            <i style="--clr:#fa5e0f;"></i>
+            <i style="--clr:#fa5e0f;"></i>
+            <div class="about-img">
+                <img src="about.jpg.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima, at omnis fugit ullam atque incidunt dolorum aliquid sunt cupiditate, ipsam eos ratione iure, provident placeat doloribus harum asperiores optio!</p>
+                </div>
+            </div>
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima, at omnis fugit ullam atque incidunt dolorum aliquid sunt cupiditate, ipsam eos ratione iure, provident placeat doloribus harum asperiores optio!</p>
+                </div>
+            </div>
+            <div class="projects-box">
+                <div class="projects-info">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima, at omnis fugit ullam atque incidunt dolorum aliquid sunt cupiditate, ipsam eos ratione iure, provident placeat doloribus harum asperiores optio!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
