@@ -123,7 +123,7 @@ span {
 .home-img img {
     position: relative;
     top: 4rem;
-    width: 25vw;
+    width: 30vw;
     clip-path: circle(40.7% at 50% 50%);
     cursor: pointer;
 }
@@ -423,6 +423,9 @@ span {
         background: var(--second-bg-color);
         color: #0c0c0c;
         padding: 1rem;
+    }
+    .home-img img {
+        margin-top: 2rem;
     }
 }
 
