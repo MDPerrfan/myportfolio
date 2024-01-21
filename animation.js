@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 // Constructor function for TxtType
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate; // Array of strings to rotate
@@ -105,4 +106,4 @@ pressRandomKey();
 function showAlert() {
     alert("This website is under development!");
 }
-showAlert();
+//showAlert();

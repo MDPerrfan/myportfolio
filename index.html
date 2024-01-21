@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Profile</title>
     <meta property="og:title" content="My Portfolio">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
-    <title>Home | Profile</title>
+    <meta name="og:descrtiption" content="Hi ! Welcome to my Portfolio website.">
+    <meta name="og:site_name" content="Parves's Portfolio website.">
+    <link rel="apple-touch-icon" sizes="180x180" href="assest/logo/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assest/logo/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assest/logo/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assest/logo/favicon_io/site.webmanifest">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,6 +26,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#education">Education</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -90,23 +97,106 @@
             </div>
         </div>
     </section>
-    <section class="projects" id="projects">
-        <h2 class="heading">Projects</h2>
-        <div class="projects-container">
-            <div class="projects-box">
-                <div class="projects-info">
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="carousel-page-container">
+            <div class="carousel-container">
+                <div class="carousel-cell">
+                    <div class="carousel-slide">
+                        <div class="carousel-slide-image">
+                            <img src="https://image.flaticon.com/icons/svg/226/226269.svg" alt="HTML5" />
+                        </div>
+                        <div class="carousel-slide-copy ">
+                            <h1 style="color: black;">HTML5</h1>
+                            <p style="color: black;">HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard. - Wikipedia</p>
+                            <a style="color: black;" href="https://en.wikipedia.org/wiki/HTML5" alt="HTML5" target="_blank" rel="noopener noreferrer nofollow"> Learn More
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="carousel-slide">
+                        <div class="carousel-slide-image">
+                            <img src="https://image.flaticon.com/icons/svg/732/732190.svg" alt="CSS3" />
+                        </div>
+                        <div class="carousel-slide-copy">
+                            <h1>CSS3</h1>
+                            <p>
+                                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. - Wikipedia
+                            </p>
+                            <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3" alt="CSS3" target="_blank" rel="noopener noreferrer nofollow"> Learn More
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="carousel-slide">
+                        <div class=" carousel-slide-image ">
+                            <img src="https://www.financial.com/wp-content/uploads/2014/11/JavaScript-logo.png " alt="Javascript " />
+                        </div>
+                        <div class="carousel-slide-copy ">
+                            <h1 style="color: black; ">JS</h1>
+                            <p style="color: black; ">JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. - Wikipedia</p>
+                            <a style="color: black; " href="https://en.wikipedia.org/wiki/JavaScript " alt="Javascript " target="_blank " rel="noopener noreferrer nofollow "> Learn More
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell ">
+                    <div class="carousel-slide ">
+                        <div class="carousel-slide-image ">
+                            <img src="https://www.shareicon.net/data/512x512/2016/07/08/117367_logo_512x512.png " alt="React JS " />
+                        </div>
+                        <div class="carousel-slide-copy ">
+                            <h1>ReactJS</h1>
+                            <p>
+                                In computing, React is a JavaScript library for building user interfaces. It is maintained by Facebook, Instagram and a community of individual developers and corporations. - Wikipedia
+                            </p>
+                            <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library) " alt="ReactJS " target="_blank " rel="noopener noreferrer nofollow "> Learn More
+                    </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elem = document.querySelector(".carousel-container");
+                var flkty = new Flickity(elem, {
+                    // options
+                    cellAlign: "right",
+                    contain: true,
+                    initialIndex: 2,
+                    pageDots: false,
+                    wrapAround: true,
+                    autoPlay: 5000,
+                    draggable: true,
+                    prevNextButtons: false,
+                    pauseAutoPlayOnHover: false
+                });
+            });
+        </script>
+
+    </section>
+    <section class="projects " id="projects">
+        <h2 class="heading ">Projects</h2>
+        <div class="projects-container ">
+            <div class="projects-box ">
+                <div class="projects-info ">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima, at omnis fugit ullam atque incidunt dolorum aliquid sunt cupiditate, ipsam eos ratione iure, provident placeat doloribus harum asperiores optio!</p>
                 </div>
             </div>
-            <div class="projects-box">
-                <div class="projects-info">
+            <div class="projects-box ">
+                <div class="projects-info ">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima, at omnis fugit ullam atque incidunt dolorum aliquid sunt cupiditate, ipsam eos ratione iure, provident placeat doloribus harum asperiores optio!</p>
                 </div>
             </div>
-            <div class="projects-box">
-                <div class="projects-info">
+            <div class="projects-box ">
+                <div class="projects-info ">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima, at omnis fugit ullam atque incidunt dolorum aliquid sunt cupiditate, ipsam eos ratione iure, provident placeat doloribus harum asperiores optio!</p>
                 </div>
@@ -114,7 +204,7 @@
         </div>
         </div>
     </section>
-    <script src="/animation.js"></script>
+    <script src="/animation.js "></script>
 </body>
 
 </html>
