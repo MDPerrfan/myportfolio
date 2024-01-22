@@ -112,7 +112,7 @@ span {
 
 .home-content h1 {
     font-size: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: rem;
     font-weight: 700;
     line-height: 1;
 }
@@ -124,16 +124,9 @@ span {
 
 .home-img img {
     position: relative;
-    top: 1rem;
+    top: 2rem;
     width: 25vw;
     clip-path: circle(40.7% at 50% 50%);
-}
-
-.home-content p {
-    color: black;
-    font-size: 1rem;
-    font-weight: 500;
-    width: 100%;
 }
 
 .social-icons a {
@@ -312,255 +305,7 @@ span {
     transition: max-height 0.3s ease-out;
 }
 
-.education {
-    padding: 2rem;
-}
-
-.carousel-container {
-    margin-bottom: 0px;
-}
-
-
-/* Carousel */
-
-.carousel {
-    text-align: center;
-    color: #090808;
-}
-
-.carousel-cell {
-    display: grid;
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel-cell img {
-    display: block;
-    height: 300px;
-}
-
-.carousel-slide {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    max-width: 100%;
-    height: 100vh;
-}
-
-.carousel-slide-image {
-    display: grid;
-    justify-self: end;
-    align-self: center;
-}
-
-.carousel-slide-copy {
-    display: grid;
-    justify-self: start;
-    align-self: center;
-    text-align: left;
-    max-width: 400px;
-    width: 100%;
-}
-
-.carousel-slide-copy h1 {
-    font-size: 2rem;
-    color: #0d0c0c;
-}
-
-.carousel-slide-copy p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #0d0c0c;
-}
-
-.carousel-slide-copy a {
-    text-decoration: none;
-    color: #131212;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-.carousel-arrow {
-    display: none;
-    justify-items: center;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    bottom: 6rem;
-    color: #0b0b0b;
-    width: 17px;
-    height: 48px;
-    background: url(../img/downArrow.png);
-}
-
-.flickity-page-dots {
-    bottom: 300px;
-}
-
-
-/* Media Queries */
-
-@media screen and (max-width: 1680px) {
-    /* Homepage */
-    .flickity-page-dots {
-        bottom: 200px;
-    }
-    .carousel-arrow {
-        bottom: 3rem;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    /* Homepage */
-    .flickity-page-dots {
-        bottom: 200px;
-        left: 90px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    /* Homepage */
-    .flickity-page-dots {
-        bottom: 130px;
-        left: 150px;
-    }
-    .carousel-arrow {
-        bottom: 1rem;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    /* Homepage */
-    .flickity-page-dots {
-        bottom: 60px;
-        left: 150px;
-    }
-    .carousel-arrow {
-        bottom: -7rem;
-    }
-}
-
-@media screen and (max-width: 990px) {
-    .carousel-slide-copy {
-        font-size: 1.5rem;
-    }
-    .carousel-slide-copy p {
-        padding-right: 20px;
-    }
-    .flickity-page-dots {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 620px) {
-    .carousel-slide {
-        height: vh;
-        grid-template-columns: 1fr;
-    }
-    .carousel-slide-image {
-        justify-self: center;
-        align-content: center;
-    }
-    .carousel-slide-copy {
-        justify-self: center;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 568px) {
-    .carousel-cell img {
-        height: 200px;
-    }
-    .carousel-slide {
-        height: 100vh;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .carousel-slide {
-        grid-template-columns: 1fr;
-        height: 800px;
-    }
-    .carousel-slide-image {
-        justify-self: center;
-        height: 200px;
-    }
-    .carousel-slide-copy h1,
-    p,
-    a {
-        text-align: center;
-        padding: 10px;
-    }
-    .carousel-cell img {
-        height: 200px;
-    }
-    .flickity-page-dots {
-        bottom: 10px;
-        left: 0px;
-    }
-    .carousel-arrow {
-        bottom: 90rem;
-    }
-}
-
-
-/* iPhone 8 Plus, 7 Plus, 6 Plus */
-
-@media screen and (max-width: 414px) {
-    /* Home Page */
-    .carousel-slide {
-        grid-template-columns: 1fr;
-        height: 100vh;
-    }
-    .carousel-slide-image {
-        justify-self: center;
-    }
-    .carousel-slide-copy h1,
-    p,
-    a {
-        text-align: center;
-        padding: 10px;
-    }
-    .carousel-cell img {
-        height: 200px;
-    }
-    .flickity-page-dots {
-        bottom: 620px;
-        left: 0px;
-    }
-    .carousel-arrow {
-        bottom: 90rem;
-    }
-    .carousel-slide-image {
-        justify-self: center;
-        align-self: end;
-    }
-    .carousel-slide-copy {
-        font-size: 1.5rem;
-        justify-self: start;
-        align-self: start;
-        text-align: center;
-    }
-    .carousel-slide-copy h1,
-    p {
-        padding: 10px;
-        margin: 0px;
-    }
-}
-
-
-/* iPhone X, 8, 7, 6 */
-
-@media screen and (max-width: 375px) {
-    .flickity-page-dots {
-        bottom: 670px;
-        left: 0px;
-    }
-}
-
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 1rem;
 }
 
@@ -679,7 +424,7 @@ span {
         padding: 1rem;
     }
     .home-img img {
-        margin-top: 2rem;
+        width: 40vw;
     }
 }
 
@@ -712,7 +457,6 @@ span {
     .home-img img {
         width: 50vw;
         /* Adjusted width for small screens */
-        top: 4rem;
         /* Adjusted top position for small screens */
     }
     .home-content p {
